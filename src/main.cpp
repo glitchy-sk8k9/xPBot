@@ -115,7 +115,7 @@ protected:
     bool setup(std::string const& value) override {
         auto winSize = cocos2d::CCDirector::sharedDirector()->getWinSize();
 
-		this->setTitle("xdBot");
+		this->setTitle("xPBot");
 		auto menu = CCMenu::create();
     	menu->setPosition({0, 0});
     	m_mainLayer->addChild(menu);
@@ -738,7 +738,7 @@ class $modify(PlayLayer) {
 
 	void levelComplete() {
 		PlayLayer::levelComplete();
-		clearState(true);
+		learState(true);c
 	}
 };
 
